@@ -1,0 +1,126 @@
+/*=============== NAVBAR STYLES ===============*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 278px;
+    height: 100%;
+    padding: 0 12px 0 12px;
+    margin-left: 125px;
+    border-right: 1px solid rgb(197, 196, 196);
+    height: 100vh;
+
+    &__logo {
+        border-radius: 50%;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        margin-top: 10px;
+
+        .logo__link {
+            border-radius: 50%;
+            padding: 10px;
+        }
+    }
+
+    &__menu {
+        max-width: 90%;
+        margin: 20px 0 4px 0;
+
+        .menu__item {
+            margin: 7px 0 7px 0;
+    
+            .menu__link {
+                display: flex;
+                align-items: center;
+                padding: 12px;
+                border-radius: 30px;
+                width: 100%;
+                transition-duration: 0.2s;
+    
+                span {
+                    margin: 0 16px 0 20px;
+                    line-height: 24px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: black;
+                }
+            }
+        }
+    
+        .menu__item:hover {
+            .menu__link {
+                background-color: rgb(231, 233, 234);
+            }
+            
+            .menu__icon {
+                filter: invert(46%) sepia(83%) saturate(1232%) hue-rotate(176deg) brightness(100%) contrast(91%);
+            }
+    
+            span {
+                color: #1DA1F2;
+            }
+        }
+    }
+
+    &__button {
+        margin: 11px 0;
+
+        .btn__tweet {
+            width: 90%;
+            background-color: rgb(29, 155, 240);
+            box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+            transition-duration: 0.2s;
+            padding: 15px 32px;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+
+            :hover {
+                background-color: #119df4;
+            }
+        }
+    }
+
+    &__account {
+        cursor: pointer;
+        margin: 12px 0;
+
+        :hover {
+            background-color: rgb(231, 233, 234);
+        }
+
+        .account__info {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 12px;
+            border-radius: 40px;
+
+            .account__img {
+                .profile__img {
+                    border-radius: 50%;
+                }
+            }
+
+            .profile__info {
+                margin: 0 12px;
+
+                .account__title {
+                    font-weight: 700;
+                }
+
+                .account__nickname {
+                    color: rgb(113, 118, 123);;
+                }
+            }
+        }
+
+        .account__menu {
+            margin: 0 0 0 auto;
+        }
+    }
+}
