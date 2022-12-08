@@ -2,10 +2,10 @@ import styles from "../styles/User.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-const Profile = () => {
+const User = () => {
     return (
         <>
-            <div className={styles.profile}>
+            <section className={styles.profile}>
                 <div className={styles.profile__container}>
                     <div className={styles.profile__header}>
                         <div className={styles.profile__icon}>
@@ -45,9 +45,9 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
 
-export default Profile;
+export default User;

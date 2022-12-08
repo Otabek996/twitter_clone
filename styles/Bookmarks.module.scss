@@ -1,0 +1,54 @@
+/*=============== BOOKMARKS STYLES ===============*/
+.bookmarks {
+    border-right: 1px solid rgb(197, 196, 196);
+    border-left: 1px solid rgb(197, 196, 196);
+    height: 100vh;
+
+    &__container {
+        .bookmarks__header {
+            padding: 0 16px;
+
+            .bookmarks__title {
+                padding: 2px 0;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 700;
+                color: black;
+                cursor: pointer;
+            }
+
+            .bookmarks__user {
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: 400;
+                color: rgb(113, 118, 123);
+                cursor: pointer;
+            }
+        }
+
+        .bookmarks__body {
+            margin: 32px 97px;
+            padding: 0 32px;
+
+            .bookmarks__cover {
+                margin: 16px 0 32px 0;
+            }
+
+            .bookmarks__text {
+                margin-bottom: 8px;
+                font-size: 31px;
+                line-height: 36px;
+                font-weight: 800;
+                color: black;
+            }
+
+            .bookmarks__description {
+                margin-bottom: 28px;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 400;
+                color: rgb(113, 118, 123);
+            }
+        }
+    }
+}
