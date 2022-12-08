@@ -3,8 +3,8 @@ import '../styles/global.scss'
 import Navbar from '../components/Navbar'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
+  return <div className='container'>
     <Navbar/>
-    <Component {...pageProps} />
-  </>
+    <Component {...pageProps}/>
+  </div>
 }
