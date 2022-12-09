@@ -10,7 +10,7 @@ const User = () => {
                     <div className={styles.profile__header}>
                         <div className={styles.profile__icon}>
                             <Link className={styles.left__arrow} href='/'>
-                                <Image src="/svg/left-arrow.svg" width={20} height={20} alt="Back"></Image>
+                                <Image src="/svg/left-arrow.svg" width={20} height={20} alt="Back Button"></Image>
                             </Link>
                         </div>
                         <div>
