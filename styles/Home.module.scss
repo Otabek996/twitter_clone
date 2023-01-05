@@ -454,7 +454,13 @@
     max-width: 350px;
     position: fixed;
     top: 0;
-    right: 165px;
+    right: calc(100% - 1340px);
+    margin-left: auto;
+
+    // @media (min-width: 1510px) {
+    //     right: 180px;
+    // }
+    
     overflow-y: auto;
     min-height: 100%;
 
