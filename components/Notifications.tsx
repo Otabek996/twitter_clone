@@ -6,7 +6,7 @@ const Notifications = () => {
         <>
             <section className={styles.notification}>
                 <div className={styles.notification__container}>
-                    <h1 className={styles.notification__title}>This page doesn't exist yet</h1>
+                    <h1 className={styles.notification__title}>This page does not exist yet</h1>
                 </div>
             </section>
 

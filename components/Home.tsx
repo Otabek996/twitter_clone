@@ -23,7 +23,7 @@ const Home = () => {
                 <div className={styles.home__container}>
                     <div className={styles.home__header}>
                         <h1 className={styles.home__title}>Последние твиты</h1>
-                        <img className={styles.home__stars} src="/svg/homeStars.svg" width={20} height={20} alt=""></img>
+                        <Image className={styles.home__stars} src="/svg/homeStars.svg" width={20} height={20} alt="" />
                     </div>
 
                     <div className={styles.home__tweet}>
@@ -45,11 +45,11 @@ const Home = () => {
                                     />
                                 <div>
                                     <div className={styles.tweet__space__icons}>
-                                        <img className={styles.tweet__space__icon} src="/svg/tweet-space-img.svg" alt="" width={20} height={20}/>
-                                        <img className={styles.tweet__space__icon} src="/svg/tweet-space-gif.svg" alt="" width={20} height={20}/>
-                                        <img className={styles.tweet__space__icon} src="/svg/tweet-space-something.svg" alt="" width={20} height={20}/>
-                                        <img className={styles.tweet__space__icon} src="/svg/tweet-space-emoji.svg" alt="" width={20} height={20}/>
-                                        <img className={styles.tweet__space__icon} src="/svg/tweet-space-time.svg" alt="" width={20} height={20}/>
+                                        <div><Image className={styles.tweet__space__icon} src="/svg/tweet-space-img.svg" alt="" width={19} height={19}/></div>
+                                        <div><Image className={styles.tweet__space__icon} src="/svg/tweet-space-gif.svg" alt="" width={19} height={19}/></div>
+                                        <div><Image className={styles.tweet__space__icon} src="/svg/tweet-space-something.svg" alt="" width={19} height={19}/></div>
+                                        <div><Image className={styles.tweet__space__icon} src="/svg/tweet-space-emoji.svg" alt="" width={19} height={19}/></div>
+                                        <div><Image className={styles.tweet__space__icon} src="/svg/tweet-space-time.svg" alt="" width={19} height={19}/></div>
                                     </div>
 
                                     <div>

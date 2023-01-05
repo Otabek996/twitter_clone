@@ -95,21 +95,24 @@
 
                         .tweet__space__icons {
                             margin-top: 12px;
-                            margin-right: 250px;
+                            margin-right: 150px;
+                            
+                            div {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: transparent;
+                                transition: 0.2s ease-out;
 
-                            .tweet__space__icon {
-                                // width: 40px;
-                                // height: 40px;
-                                margin-right: 10px;
-                                cursor: pointer;
-                                // padding: 10px;
-                                // transition-duration: 0.2s;
-                                // border-radius: 50%;
+                                .tweet__space__icon {
+                                    margin: 0 auto;
+                                    cursor: pointer;
+                                }
+
+                                &:hover {
+                                    background-color: rgb(231, 233, 234);
+                                }
                             }
-
-                            // .tweet__space__icon:hover {
-                            //     background-color: rgb(231, 233, 234);
-                            // }
                         }
 
                         .tweet__space__button {

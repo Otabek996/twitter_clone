@@ -35,7 +35,7 @@ const Navbar = () => {
                     <div className={styles.navbar__menu}>
                         <ul className={styles.menu__list}>
                             {navigation.map(({ id, title, path, icon }) => (
-                                <li className={styles.menu__item}>
+                                <li className={styles.menu__item} key={id}>
                                     <Link className={styles.menu__link} key={id} href={path}>
                                         <Image className={styles.menu__icon} src={icon} width={28} height={28} alt="" />
                                         <span>{title}</span>
