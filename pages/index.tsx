@@ -1,8 +1,9 @@
+import Home from "../components/Home";
 
-
-const Home = () => (
+const Index = () => (
   <>
+    <Home/>
   </>
 );
 
-export default Home;
+export default Index;

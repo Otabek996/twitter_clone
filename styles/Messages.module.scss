@@ -1,0 +1,119 @@
+/*=============== MESSAGES STYLES ===============*/
+.messages {
+    border-right: 1px solid rgb(197, 196, 196);
+    border-left: 1px solid rgb(197, 196, 196);
+    height: 100vh;
+    width: 388px;
+    margin-left: 391px;
+
+    &__container {
+        .messages__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+            margin: 10px 0;
+
+            .messages__title {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 700;
+                padding: 2px 0;
+            }
+
+            .messages__icons {
+                img {
+                    width: 34px;
+                    height: 34px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    transition-duration: 0.2s;
+                    cursor: pointer;
+                }
+
+                img:hover {
+                    background-color: rgb(231, 233, 234);
+                }
+            }
+        }
+
+        .messages__body {
+            max-width: calc(400px);
+            padding: 0 32px;
+            margin: 32px 0;
+
+            &__title {
+                font-size: 31px;
+                line-height: 36px;
+                margin-bottom: 8px;
+                font-weight: 800;
+            }
+
+            &__subtitle {
+                margin-bottom: 28px;
+                color: rgb(113, 118, 123);
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+
+            &__button {
+                background-color: rgb(29, 155, 240);
+                min-width: 52px;
+                min-height: 52px;
+                transition-duration: 0.2s;
+                padding: 0 32px;
+                font-size: 17px;
+                line-height: 20px;
+                border: none;
+                color: white;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.message__section {
+    border-right: 1px solid rgb(197, 196, 196);
+    height: 100vh;
+    width: 599px;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        margin: 32px 100px;
+        padding: 0 32px;
+
+        .message__section__body {
+            .message__section__title {
+                font-size: 31px;
+                line-height: 36px;
+                margin-bottom: 8px;
+                font-weight: 800;
+            }
+
+            .message__section__subtitle {
+                margin-bottom: 28px;
+                color: rgb(113, 118, 123);
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .messages__body__button {
+                background-color: rgb(29, 155, 240);
+                min-width: 52px;
+                min-height: 52px;
+                transition-duration: 0.2s;
+                padding: 0 32px;
+                font-size: 17px;
+                line-height: 20px;
+                border: none;
+                color: white;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}

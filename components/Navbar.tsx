@@ -1,6 +1,8 @@
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import Helmet from "react-helmet";
+import React, { useState } from "react";
 
 const navigation = [
     { id: 1, title: 'Главная', path: '/', icon: '/svg/home01.svg' },
@@ -16,6 +18,12 @@ const navigation = [
 const Navbar = () => {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Twitter</title>
+                <link rel="icon" href="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" />
+                <meta name="description" content="Twitter" />
+            </Helmet>
             <nav className={styles.navbar}>
                 <div className={styles.navbar__container}>
                     <div className={styles.navbar__logo}>

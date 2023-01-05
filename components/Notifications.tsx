@@ -1,40 +1,31 @@
-import styles from "../styles/Explore.module.scss";
-import Link from "next/link";
+import styles from "../styles/Notification.module.scss";
 import Image from "next/image";
 
-const Explores = () => {
+const Notifications = () => {
     return (
         <>
-            <section className={styles.explore}>
-                <div className={styles.explore__container}>
-                    <div className={styles.explore__header}>
-                        <input className={styles.explore__header__input} type="text" placeholder="Поиск в Твиттере"/>
-                        <button className={styles.explore__header__setting}>
-                            <Image src="/svg/bx-cog.svg" width={20} height={20} alt=''/>
-                        </button>
-                    </div>
-                    
-                    <div className={styles.explore__body}>
-                        <h1 className={styles.explore__title}>Актуальные темы для вас</h1>
-                        <div className={styles.explore__subtitle__box}>
-                            <div className={styles.explore__subtitle__header}>
-                                <p className={styles.explore__subtitle__header__title}>Актуальные темы: Узбекистан</p>
-                                <p className={styles.explore__subtitle__header__dots}>...</p>
-                            </div>
-                            <div className={styles.explore__subtitle__body}>
-                                <h5 className={styles.explore__subtitle__body__title}>New Year 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.explore__footer}>
-                        <p className={styles.explore__footer__title}>Показать еще</p>
-                    </div>
+            <section className={styles.notification}>
+                <div className={styles.notification__container}>
+                    <h1 className={styles.notification__title}>This page doesn't exist yet</h1>
                 </div>
             </section>
 
-            <section className={styles.read}>
-            <div className={styles.read__container}>
+            <section className={styles.search}>
+                <div className={styles.search__container}>
+                    <div className={styles.search__header}>
+                        <div className={styles.search__icon}>
+                            <Image className={styles.search__icon__dots} src="/svg/bx-search.svg" width={22} height={19} alt=''/>
+                        </div>
+                        <input className={styles.search__input} type="text" placeholder="Поиск в Твиттере"/>
+                    </div>
+
+                    <div className={styles.search__body}>
+                        <div className={styles.current__topics__card}>
+                            <h1 className={styles.topics__card__title}>Актуальные темы для вас</h1>
+                        </div>
+                    </div>
+
+                    <div className={styles.read__container}>
                     <div className={styles.read__card}>
                         <h1 className={styles.read__card__title}>Кого читать</h1>
 
@@ -42,7 +33,7 @@ const Explores = () => {
                             <div className={styles.read__card__user}>
                                 <Image className={styles.read__card__img} src="/img/userOne.jpg" width={48} height={48} alt=''/>
                                 <div className={styles.card__user__text}>
-                                    <h1 className={styles.card__user__title}>Shibetoshi Nakamot</h1>
+                                    <h1 className={styles.card__user__title}>Shibetoshi Nakamoto </h1>
                                     <p className={styles.card__user__nickname}>@BillyM2k</p>
                                 </div>
                                 <button className={styles.read__card__button}>Читать</button>
@@ -81,10 +72,11 @@ const Explores = () => {
                         </div>
                         <p className={styles.documentation__twitter}>© Twitter, Inc., 2023.</p>
                     </div>
+                    </div>
                 </div>
             </section>
         </>
     )
 }
 
-export default Explores
+export default Notifications
